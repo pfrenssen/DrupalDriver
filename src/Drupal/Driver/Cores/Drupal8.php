@@ -341,4 +341,16 @@ class Drupal8 implements CoreInterface {
     $term->delete();
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function languageCreate($langcode) {
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function languageDelete($langcode) {
+  }
+
 }

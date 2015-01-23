@@ -112,4 +112,22 @@ interface CoreInterface {
    */
   public function roleDelete($role_name);
 
+  /**
+   * Creates a language.
+   *
+   * @param \stdClass $language
+   *   An object with the following properties:
+   *   - langcode: the langcode of the language to create.
+   */
+  public function languageCreate($language);
+
+  /**
+   * Deletes a language.
+   *
+   * @param \stdClass $language
+   *   An object with the following properties:
+   *   - langcode: the langcode of the language to delete.
+   */
+  public function languageDelete($language);
+
 }

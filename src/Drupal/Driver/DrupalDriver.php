@@ -276,4 +276,18 @@ class DrupalDriver implements DriverInterface, SubDriverFinderInterface {
     $this->getCore()->roleDelete($rid);
   }
 
+  /**
+   * {@inheritDoc}
+   */
+  public function languageCreate($language) {
+    return $this->getCore()->languageCreate($language);
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  public function languageDelete($language) {
+    $this->getCore()->languageDelete($language);
+  }
+
 }
